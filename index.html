@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="bg-image" 
+   <!-- <div class="bg-image" 
      style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
             height: 100vh">
-
-    <div class="container">
+-->
+    <div class="container-md bg-info bg-opacity-25 ">
     <h1 id="title">This is the title</h1>
 
     <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse placeat vel cupiditate libero temporibus officia cum cumque debitis, quaerat possimus! Quia voluptates, aliquam voluptate molestiae natus magni debitis error quis!</p>
@@ -20,61 +21,72 @@
     <form action="" id="survey-form">
       <div class="mb-3">
       <label for="name" id="name-label">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Put your name here!" required>
+      <input class="form-control" type="text" name="name" id="name" placeholder="Put your name here!" required>
       </div>
 
       <div class="mb-3">
       <label for="email" id="email-label">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Put your email here!" required>
+      <input class="form-control" type="email" name="email" id="email" placeholder="Put your email here!" required>
       </div>
 
       <div class="mb-3">
       <label for="number" id="number-label">Number</label>
-      <input type="number" name="number" id="number" min="0" max="100" placeholder="Put a number between 0 and 100!">
+      <input class="form-control" type="number" name="number" id="number" min="0" max="100" placeholder="Put a number between 0 and 100!">
       </div>
 
       <div class="mb-3">
       <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
-      <select name="dropdown" id="dropdown">
+      <select class="form-select" name="dropdown" id="dropdown">
         <option value="Student">Student</option>
         <option value="Full_time">Full time job</option>
       </select>
       </div>
-
-      <div class="mb-3">
       <label for="radio1" id="radio1-label">Select an option</label>
-      <input type="radio" name="radio1" id="radio1" value="value1">value1
-      <input type="radio" name="radio1" id="radio2" value="value2">value2
+      <div class="mb-3 form-check">
+      
+      <input class="form-check-input" type="radio" name="radio1" id="radio1" value="value1">value1
       </div>
+      <div class="mb-3 form-check">
+      <input class="form-check-input" type="radio" name="radio1" id="radio2" value="value2">value2
+      </div>
+      
 
-
-      <div class="mb-3">
-      <input type="checkbox" name="transport_type1" id="transport_type1" value="Car">
+      <div class="mb-3 form-check">
+      <input class="form-check-input" type="checkbox" name="transport_type1" id="transport_type1" value="Car">
+     
       <label for="transport_type1" id="transport1-label">Car</label>
-      <input type="checkbox" name="transport_type2" id="transport_type2" value="Plane">
+    </div>
+      <div class="mb-3 form-check">
+      <input class="form-check-input" type="checkbox" name="transport_type2" id="transport_type2" value="Plane">
+      
       <label for="transport_type2" id="transport2-label">Plane</label>
-      <input type="checkbox" name="transport_type3" id="transport_type3" value="Walk">
+    </div>
+      <div class="mb-3 form-check">
+    
+      <input class="form-check-input" type="checkbox" name="transport_type3" id="transport_type3" value="Walk">
       <label for="transport_type3" id="transport3-label">Walk</label>
-      <input type="checkbox" name="transport_type4" id="transport_type4" value="Bike">
+    </div>
+      <div class="mb-3 form-check">
+      <input class="form-check-input" type="checkbox" name="transport_type4" id="transport_type4" value="Bike">
       <label for="transport_type4" id="transport4-label">Bike</label>
       </div>
 
       <div class="mb-3">
       <label for="comments" id="comments-label">Comments:</label>
-      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Put your comments here!"></textarea>
+      <textarea class="form-control" name="comments" id="comments" cols="30" rows="10" placeholder="Put your comments here!"></textarea>
       </div>
 
       <div class="mb-3">
-      <input type="submit" id="submit">
+      <input class="btn btn-primary mb-3" type="submit" id="submit">
       </div>
     </form>
     </div>
 
 
 
-    
+<!--  
   </div>
-    
+-->   
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
